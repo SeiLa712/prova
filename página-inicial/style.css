@@ -1,0 +1,184 @@
+body {
+  background-color: #0a4b73;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Topo do site */
+
+.topo {
+  background-color: #3bacd9;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  min-height: 150px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.logo {
+  background-color: #2484bf;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  padding: 10;
+}
+.img {
+  max-width: 200px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+}
+
+.menu a {
+  color: white;
+  background-color: #2484bf;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.5;
+}
+/* meio */
+
+.textos{
+    background-color: #2484bf;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    
+}
+
+.textos h1{
+    line-height: 1.2;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.textos li{
+    font-size: 1.2em;
+    color:  #4b5563;
+    margin-bottom: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 14px;
+}
+
+.textos p{
+    color:  #4b5563;
+    margin-bottom: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* acabando */
+
+.sobre-nos{
+    margin-top: 50px;
+    background-color: #2484bf;
+    color: white;
+    padding: 45px ;
+}
+
+.sobre-grid{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+.sobre-nos h2{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    justify-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sobre-nos p{
+    color: rgb(98, 95, 95);
+    margin: 10px;
+    font-size: 14px;
+}
+
+.Apoio{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #2484bf;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+.youtube{
+    background-color: #2484bf;
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+}
+
+.youtube h1{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.image{
+    background-color: #2484bf;
+    width:  85%;
+    height: 95%;
+    margin: 5%;
+}
+
+
+
+.Apoio h2{
+    text-align: center;
+}
+.Apoio{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Apoio img{
+    max-width: 1000px;
+}
