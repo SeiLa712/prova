@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'font.ttf';
+  src: url('./fonts/font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #0a4b73;
   color: black;
+  font-family: 'font.ttf', sans-serif;
 }
 
 img {
@@ -137,48 +145,117 @@ a {
     margin: 10px;
     font-size: 14px;
 }
-
-.Apoio{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: #2484bf;
-    align-items: center;
-    display: grid;
-    text-align: center;
-}
-.youtube{
-    background-color: #2484bf;
-    width: 1000px;
-    height: 600px;
-    align-items: center;
+/*  */
+.grid-principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.youtube h1{
-    color: white;
-    margin: 10px;
-    text-align: center;
+/* BLOCO ESQUERDA (VIDEO) */
+.video {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.image{
-    background-color: #2484bf;
-    width:  85%;
-    height: 95%;
-    margin: 5%;
+.video h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
 }
 
-
-
-.Apoio h2{
-    text-align: center;
-}
-.Apoio{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.video img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.Apoio img{
-    max-width: 1000px;
+/* LATERAL DIREITA */
+.lateral {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* REDES */
+.redes h2 {
+  text-align: center;
+  color: #666;
+}
+
+.icones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin-top: 15px;
+}
+
+.icones img {
+  width: 55px;
+  cursor: pointer;
+}
+
+/* DIVISÓRIA */
+.lateral hr {
+  margin: 20px 0;
+  border: 1px solid #aaa;
+}
+
+/* LOGIN */
+.login h2 {
+  text-align: center;
+  color: #666;
+}
+
+.cadastro {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.cadastro a {
+  color: #2a7abf;
+}
+
+/* INPUTS */
+.login input {
+  width: 90%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #2a7abf;
+  color: white;
+  outline: none;
+}
+
+.login input::placeholder {
+  color: white;
+}
+
+.opcoes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* BOTÃO */
+.btn-login {
+  width: 50%;
+  margin: 15px auto 0;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #3ec13e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
